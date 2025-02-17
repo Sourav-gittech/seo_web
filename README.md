@@ -1,3 +1,4 @@
+![favicon](https://github.com/user-attachments/assets/f2ae0219-87fb-42b8-9163-2da0ed911c21)
 # SEO Website Project
 
 ## Introduction
