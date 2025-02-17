@@ -1,0 +1,298 @@
+/* TABLE OF CONTENTS  */
+/* ---------------------
+1. General
+2. Navbar
+3. Banner
+4. About
+4. Services
+5. Blog
+6. Contact
+7. Footer
+--------------------- */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./../fonts/Open_Sans/OpenSans_SemiCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('./../fonts/open_sans_condensed/OpenSans-CondBold.ttf');
+}
+
+/* ---------------------
+    1. General CSS
+--------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------- Variable Define -------- */
+:root {
+    /* Background Color  */
+    --primary-color: #f77949;
+    --bg-blue: #37418e;
+    --bg-white: #fff;
+    --bg-dark-blue: #292b70;
+    --bg-gray: #ecf0f9;
+
+    /* text color  */
+    --text-primary: #f77949;
+    --text-blue: #1f294c;
+    --text-black: #1f1f1f;
+    --text-gray: #6d6e7b;
+    --text-white: #fff;
+
+    /* font family  */
+    --primary-font: "Open Sans Condensed", serif;
+    --secondary-font: "Open Sans", serif;
+}
+
+body {
+    background-image: url('./../images/page-background.jpg');
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    font-family: var(--secondary-font);
+    overflow-x: hidden;
+}
+
+/* scrollbar CSS  */
+::-webkit-scrollbar {
+    width: .625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+section {
+    padding: 3.4375rem 0;
+}
+
+.main-btn {
+    display: inline-block;
+    border-radius: 1.625rem;
+    padding: .625rem 2.3125rem;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    font-weight: 700;
+    font-family: var(--primary-font);
+    font-size: 1.0625rem;
+    text-decoration: none;
+    box-shadow: 0 0 .0625rem rgb(0 0 0 / 0%);
+    transition: .2s;
+}
+
+.main-btn:hover {
+    background-color: var(--bg-blue);
+    color: var(--text-white);
+}
+
+h1 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: var(--text-blue);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.8125rem;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: var(--text-blue);
+    margin-bottom: .9375rem;
+    line-height: 4rem;
+    letter-spacing: 0;
+}
+
+h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: var(--text-blue);
+    margin-bottom: .9375rem;
+    letter-spacing: 0;
+}
+
+p {
+    font-size: .9375rem;
+    line-height: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+input:hover,
+input:focus,
+textarea:focus,
+textarea:hover,
+button {
+    border-color: var(--primary-color) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* ---------------------
+    2. Navbar CSS
+--------------------- */
+
+.header_wrapper .navbar {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.header_wrapper .navbar-brand img {
+    max-width: 9.375rem;
+    height: auto;
+}
+
+.header_wrapper .navbar-toggler {
+    border: 0;
+}
+
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 .625rem;
+}
+
+.header_wrapper .nav-item .nav-link {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--text-blue);
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+
+.header_wrapper .nav-item .nav-link:hover,
+.header_wrapper .nav-item .nav-link.active {
+    color: var(--text-primary);
+}
+
+.header-scrolled {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.3125rem;
+    background-color: var(--bg-white);
+    -webkit-box-shadow: 0 .25rem .375rem 0 rgba(12, 0, 46, .05);
+    box-shadow: 0 .25rem .375rem 0 rgba(12, 0, 46, .05);
+}
+
+/* ---------------------
+    3. Banner CSS
+--------------------- */
+
+.banner_wrapper {
+    padding-top: 6.25rem;
+}
+
+/* ---------------------
+    4. About CSS
+--------------------- */
+
+.about_wrapper {
+    padding-top: 7.5rem;
+}
+
+/* ---------------------
+    5. Services CSS
+--------------------- */
+
+.services_wrapper {
+    padding-top: 7.5rem;
+}
+
+.services_wrapper h3 span {
+    color: var(--text-primary);
+}
+
+.services_wrapper .service_phone {
+    max-width: 70%;
+}
+
+/* ---------------------
+    5. Blog CSS
+--------------------- */
+
+.blog_wrapper .newsletter_wrapper {
+    background-color: var(--bg-blue);
+}
+
+.blog_wrapper .newsletter {
+    width: 50%;
+    margin: auto;
+}
+
+.blog_wrapper .newsletter .form-control {
+    background-color: var(--bg-dark-blue);
+    border-color: var(--bg-dark-blue);
+    border-style: solid;
+    border-radius: 1.625rem;
+    color: var(--text-white);
+    font-size: .9375rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+    padding: .625rem 2rem;
+}
+
+.blog_wrapper input::placeholder {
+    color: var(--text-white);
+}
+
+/* card */
+.blog_wrapper a {
+    color: var(--text-blue);
+    text-decoration: none;
+}
+
+.blog_wrapper .date,
+.blog_wrapper .card a:hover {
+    color: var(--primary-color);
+}
+
+/* ---------------------
+    6. Contact CSS
+--------------------- */
+
+.contact_wrapper input,
+.contact_wrapper textarea {
+    background-color: var(--bg-white);
+    border-color: var(--bg-gray);
+    border-radius: .9375rem;
+    color: var(--text-gray);
+    font-size: .9375rem;
+    font-weight: 400;
+    padding: .9375rem 2rem .9375rem 1.3125rem;
+}
+
+/* ---------------------
+    7. Footer CSS
+--------------------- */
+
+.footer_wrapper a {
+    color: var(--text-gray);
+    font-size: .9375rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer_wrapper a:hover {
+    color: var(--primary-color);
+}
